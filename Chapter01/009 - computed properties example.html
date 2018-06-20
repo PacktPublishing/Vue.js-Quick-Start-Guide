@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - 009 - Vue computed properties example</title>
+  
+  
+  
+  
+      <style>
+      body, input {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <div id="example">
+  <p>User name: {{ userName }}</p>
+  <input v-model="title" placeholder="enter title here">
+  <p>User name prefixed with a title: "{{ prefixedMessage }}"</p>
+</div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js'></script>
+
+  
+
+    <script >
+      var example = new Vue({
+  el: '#example',
+  data: {
+    userName: 'John Doe',
+    title: ''
+  },
+  computed: {
+    // a computed getter
+    prefixedMessage: function () {
+      // `this` points to the Vue instance's data option
+      return this.title + " " + this.userName
+    }
+  }
+})
+    </script>
+
+
+
+  
+  
+
+</body>
+
+</html>
+ 

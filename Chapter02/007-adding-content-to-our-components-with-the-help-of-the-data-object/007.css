@@ -1,0 +1,8 @@
+article {
+    font-size: 40px;
+    padding: 20px;
+    color: limegreen;
+    font-family: Arial;
+    border: 3px solid green;
+    border-radius: 10px;
+}

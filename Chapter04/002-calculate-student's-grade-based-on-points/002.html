@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>004-002 - Calculate student's grades based on points</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+</head>
+
+<body>
+	<div id="app">
+	  <h1>A simple grade-rounding Vue app</h1>
+	  <p>Points from test: {{ points }}</p>
+	  <p>Rounded points are: {{ points | pointsRoundedUp }}</p>
+	  <p v-if="points > 90">Final grade: A</p>
+	  <p v-else-if="points > 80 && points < 90">Final grade: B</p>
+	  <p v-else-if="points > 70 && points < 80">Final grade: C</p>
+	  <p v-else-if="points > 60 && points < 70">Final grade: D</p>
+	  <p v-else-if="points > 50 && points < 86">Final grade: E</p>
+	  <p v-else="points < 50">Final grade: F</p>
+	</div>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="002.js"></script>
+</body>
+
+</html>

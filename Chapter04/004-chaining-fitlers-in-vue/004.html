@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>004-004 - Chaining filters in Vue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+</head>
+
+<body>
+	<div id="app">
+	  <h1>A simple grade-rounding Vue app</h1>
+	  <p>Points from test: {{ points }}</p>
+	  <p>Rounded points are: {{ points | pointsRoundedUp }}</p>
+	  <p>Student info: 
+	  <!--
+	  <p>Name: {{ firstName, lastName | firstAndLastName | toLowerCase | capitalizeFirstLetter}}</p>
+	  -->
+	  <p>
+		Name: 
+		{{ lastName | toLowerCase | capitalizeFirstLetter }}, 
+		{{ firstName | toLowerCase | capitalizeFirstLetter }}
+	  </p>
+	  <p>Year of study: {{ yearOfStudy | yearNumberToWord }}</p>
+	  <p>Final grade: <strong>{{ points | pointsToGrade }}</strong></p>
+	</div>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="004.js"></script>
+</body>
+
+</html>

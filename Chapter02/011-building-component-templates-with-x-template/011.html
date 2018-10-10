@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>011 - Building component templates with x-template</title>
+    <link rel="stylesheet" href="011.css">
+</head>
+
+<body>
+	<p>This is what happens if the <strong>datacontent</strong> is not providing the correct data - the child component will revert to its <strong>default</strong> property in the <strong>props</strong> object.</p>
+
+    <div id="app">
+      <script type="text/x-template" id="custom-article-template">
+        <p>{{ name }}</p>
+      </script>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="011.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>003-computed properties and methods - updated code</title>
+    <link rel="stylesheet" href="003.css">
+</head>
+
+<body>
+
+    <div id="example">
+        <p>Enter owner name:
+            <input v-model.lazy="ownerName" placeholder="enter owner">
+        </p>
+        <p>Enter thing owned:
+            <input v-model.lazy="thing" placeholder="enter thing">
+        </p>
+        <h1 v-if="ownerName && thing">{{ ownerHasThing }}</h1>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="003.js"></script>
+</body>
+
+</html>

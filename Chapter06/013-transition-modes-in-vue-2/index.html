@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Transition modes in Vue 2</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <transition name="smooth" mode="out-in" :duration="500">
+        <button v-if="show"
+        key="first"
+        v-on:click="show = !show">
+        Show? {{ show }}
+        </button>
+        <button v-else
+        key="second"
+        v-on:click="show = !show">
+        Show? {{ show }}
+        </button>
+      </transition>
+      <transition :duration="1000"
+        enter-active-class="slideInDown animated"
+        leave-active-class="slideOutDown animated">
+        <div v-if="show">
+          <custom-component>
+          </custom-component>
+        </div>
+      </transition>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+    
+    <script  src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Transition groups in Vue 2</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="tale">
+        <transition-group>
+          <button
+            class="bare"
+            key="howManyClaps"
+            v-if="clapCount">
+          {{ clapCount }}
+          </button>
+          <button
+            class="fa fa-thumbs-o-up animated orange"
+            key="theClapButton"
+            v-on:click="aClap()">
+          </button>
+        </transition-group>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+    
+    <script  src="js/index.js"></script>
+  </body>
+</html>

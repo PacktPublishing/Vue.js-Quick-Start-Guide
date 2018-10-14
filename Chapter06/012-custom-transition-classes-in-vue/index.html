@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Transition Classes in Vue</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+  <button v-on:click="show = !show">
+    Show? {{ show }}
+  </button>
+  <transition :duration="4000"
+     name="converted"
+     enter-active-class="rubberBand animated"
+     leave-active-class="bounceOut animated">
+        <div v-if="show">
+          <custom-component>
+          </custom-component>
+        </div>
+  </transition>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+
+  <script  src="js/index.js"></script>
+</body>
+</html>

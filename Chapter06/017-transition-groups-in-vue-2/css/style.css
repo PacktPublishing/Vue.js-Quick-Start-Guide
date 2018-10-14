@@ -1,0 +1,31 @@
+button.bare {
+  font-size: 30px;
+  background: white;
+  border: none;
+  margin: 0 20px;
+}
+button:focus.bare, button:focus.fa {
+  outline: 0;
+}
+button.fa {
+  cursor: pointer;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: none;
+}
+.orange {
+  background: orange;
+}
+
+/* animation hooks */
+.v-enter,
+.v-leave-to{
+  opacity: 0;
+  transform: translate(1000px, 500px);
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 5s, transform 1s
+}

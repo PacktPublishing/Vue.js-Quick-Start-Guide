@@ -1,0 +1,16 @@
+button {
+  background-color: red;
+  transition: background-color 4s;
+}
+button:hover {
+  background-color: blue;
+}
+
+/* some additional styling */
+* {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}

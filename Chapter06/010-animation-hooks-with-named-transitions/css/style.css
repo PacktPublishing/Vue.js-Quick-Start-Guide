@@ -1,0 +1,27 @@
+/* 'named' transition */
+.named-enter, .named-leave-to {
+  opacity: 0;
+}
+.named-enter-active, .named-leave-active {
+  transition: opacity 3s;
+}
+.named-enter-to, .named-leave {
+  opacity: 1;
+}
+
+/* other styles */
+button {
+  background-color: red;
+  transition: background-color 4s;
+}
+button:hover {
+  background-color: blue;
+}
+/* some additional styling */
+* {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}

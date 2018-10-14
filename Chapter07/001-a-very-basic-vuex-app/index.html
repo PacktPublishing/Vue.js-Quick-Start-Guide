@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>A very basic vuex app</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	</head>
+	<body>
+		<div id="app">
+			<h1>Fruit to eat: {{count}}</h1>
+			<button v-on:click="eatFruit(1)">Eat fruit!</button>
+			<button v-on:click="counterReset()">Reset the counter</button>
+		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/vuex/3.0.1/vuex.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'></script>
+		
+		<script  src="js/index.js"></script>
+	</body>
+</html>

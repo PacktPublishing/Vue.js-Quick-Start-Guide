@@ -1,0 +1,28 @@
+button {
+  background-color: red;
+}
+
+button:hover {
+  animation: change-color 4s;
+}
+
+@keyframes change-color {
+  0% {
+    background: red;
+  }
+  50% {
+    background: green;
+  }
+  100% {
+    background: blue;
+  }
+}
+
+/* some additional styling */
+* {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}

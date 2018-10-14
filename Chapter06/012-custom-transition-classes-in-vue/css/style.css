@@ -1,0 +1,19 @@
+/* CSS classes used are imported from the Animate CSS library
+and can be found in Settings of this pen */
+/* other styles */
+button {
+  background-color: red;
+  transition: background-color 4s;
+}
+button:hover {
+  background-color: blue;
+}
+
+* {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+* { overflow: hidden }

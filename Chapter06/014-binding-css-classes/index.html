@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Binding CSS classes</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+	</head>
+	<body>
+		<div id="app" class="p-4">
+			<h1>Binding CSS classes</h1>
+			<p class="lead">Click the button below a few times</p>
+			<button v-on:click="btnClicked = !btnClicked" v-bind:class="{'btn': true, 'btn-lg': true, 'btn-primary': true, 'btn-secondary': btnClicked}">A button</button>
+		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+		<script  src="js/index.js"></script>
+	</body>
+</html>

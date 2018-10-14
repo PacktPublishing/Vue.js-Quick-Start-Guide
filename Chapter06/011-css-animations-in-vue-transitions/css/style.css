@@ -1,0 +1,46 @@
+/* 'named' transition is replaced with 'converted' animation */
+.converted-enter-active {
+  animation: converted .5s;
+}
+.converted-leave-active {
+  animation: converted .5s reverse;
+}
+@keyframes converted {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    background-color: purple;
+  }
+  65% {
+    background-color: green;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+.named-enter-to, .named-leave {
+  opacity: 1;
+}
+*/
+
+/* other styles */
+button {
+  background-color: red;
+  transition: background-color 4s;
+}
+button:hover {
+  background-color: blue;
+}
+/* some additional styling */
+* {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+span {
+  display: inline-block;
+}

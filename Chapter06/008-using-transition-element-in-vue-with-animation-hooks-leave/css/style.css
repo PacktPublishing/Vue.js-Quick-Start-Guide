@@ -1,0 +1,32 @@
+.v-leave {
+  opacity: 1;
+}
+.v-leave-active {
+  transition: opacity 3s;
+}
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-enter-active {
+  transition: opacity 3s;
+}
+.v-enter  {
+  opacity: 0;
+}
+
+button {
+  background-color: red;
+  transition: background-color 4s;
+}
+button:hover {
+  background-color: blue;
+}
+/* some additional styling */
+* {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}

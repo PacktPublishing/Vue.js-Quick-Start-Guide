@@ -3,7 +3,7 @@ Vue.js Quick Start Guide, published by Packt
 
 <a href="https://www.packtpub.com/application-development/vuejs-quick-start-guide?utm_source=github&utm_medium=repository&utm_campaign=9781789344103"><img src="https://www.packtpub.com/sites/default/files/B11251.png" alt="Vue.js Quick Start Guide" height="256px" align="right"></a>
 
-This is the code repository for [Book Name](https://www.packtpub.com/application-development/vuejs-quick-start-guide?utm_source=github&utm_medium=repository&utm_campaign=9781789344103), published by Packt.
+This is the code repository for [Vue.js Quick Start Guide](https://www.packtpub.com/application-development/vuejs-quick-start-guide?utm_source=github&utm_medium=repository&utm_campaign=9781789344103), published by Packt.
 
 **Learn how to build amazing and complex reactive web applications easily using Vue.js**
 
